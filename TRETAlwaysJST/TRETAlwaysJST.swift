@@ -16,7 +16,7 @@ public final class AlwaysJST {
         return Date(timeIntervalSinceNow: difference)
     }
     
-    init() throws {
+    public init() throws {
         let start = Date()
         
         do {
