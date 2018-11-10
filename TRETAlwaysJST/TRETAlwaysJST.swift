@@ -78,10 +78,10 @@ public final class AlwaysJST {
     }
     
     private func jstDate(from jstString: String) -> Date? {
-        let dateFormater = DateFormatter()
-        dateFormater.locale = Locale(identifier: "en_US_POSIX")
-        dateFormater.dateFormat = "E MMM dd HH:mm:ss yyyy' JST '"
-        return dateFormater.date(from: jstString)
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier: "en_US_POSIX")
+        dateFormatter.dateFormat = "E MMM dd HH:mm:ss yyyy' JST '"
+        return dateFormatter.date(from: jstString)
     }
 }
 
